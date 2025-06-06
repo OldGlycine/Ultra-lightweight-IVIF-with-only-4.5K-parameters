@@ -1,0 +1,25 @@
+dataset_root : ./MSRS
+dataset_name : MSRS
+seed : 3407
+have_seg_label : False
+project_name : Fuse87
+exp_name: Fuse87_b4_lr1e-2_ep50_lf0.1_recons2
+resume : ~
+img_size : 320
+
+log_level : INFO
+wandb_mode: online
+
+start_epoch : 0
+num_epochs : 50
+epoch_gap : 50
+batch_size : 4
+num_workers : 0
+lr_i : 1.0e-2
+lr_f : 0.1
+momentum : 0.937
+
+coeff_content: 1
+coeff_ssim: 1
+coeff_saliency: 10
+coeff_recons: 2
