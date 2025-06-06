@@ -3,12 +3,11 @@ import warnings
 from pathlib import Path
 
 import cv2
-import torch.hub
 from kornia import image_to_tensor, tensor_to_image
 from torchvision.transforms import Resize, Compose, Normalize
 from tqdm import tqdm
-
-from utils.u2net import U2NETP, U2NET
+import torch
+from utils.u2net import U2NETP
 
 
 class Saliency:
